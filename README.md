@@ -37,8 +37,6 @@ $ socialshares http://www.theguardian.com/politics facebook     --retry 2
 Platform    | Description
 ----------- | -----------
 facebook    | facebook shares and comments
-linkedin    | linkedin shares
-google      | google +1's
 pinterest   | pinterest pins
 reddit      | reddit ups and downs (summed across posts)
 
@@ -52,7 +50,8 @@ The following APIs unfortunately no longer exist, and have been removed from the
 Platform    | Description
 ----------- | -----------
 twitter     | twitter tweets and retweets containing the URL
-facebookfql | facebook likes, shares and comments
+linkedin    | linkedin shares
+google      | google +1's
 
 ### Output
 
@@ -64,9 +63,7 @@ By default, `socialshares` outputs JSON:
     "downs": 0,
     "ups": 6
   },
-  "google": 20,
   "facebook": 1498,
-  "twitter": 300,
   "pinterest": 1
 }
 ```
