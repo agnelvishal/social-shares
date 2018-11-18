@@ -1,6 +1,6 @@
 def fetch(session, url):
-    return session.get('http://buttons.reddit.com/button_info.json',
-        params={'format': 'json', 'url': url})
+    return session.get('https://www.reddit.com/api/info.json',
+        params={'url': url})
 
 def parse(response):
     if response.status_code != 200:
